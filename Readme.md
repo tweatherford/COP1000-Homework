@@ -1,6 +1,8 @@
 #COP1000 Homework
 ##For Daytona State College - Fall 2016
-###Principles of Computer Program_V5_FA16_LEC - Instructor:Bettye Parham Student:Tim Weatherford
+###Principles of Computer Program_V5_FA16_LEC
+###Instructor:Bettye Parham
+###Student:Tim Weatherford
 Git repo for all my assignments for the online Intro to Programming class.
 Uses Python 3.5.2 for all files ending in .py 
 All files ending in .rap use the [Raptor Flowcharting Tool](http://raptor.martincarlisle.com/)
