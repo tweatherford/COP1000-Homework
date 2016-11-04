@@ -7,5 +7,5 @@ Git repo for all my assignments for the online Intro to Programming class.
 Uses Python 3.5.2 for all files ending in .py 
 All files ending in .rap use the [Raptor Flowcharting Tool](http://raptor.martincarlisle.com/)
 
-Please do not plagurize or copy my work. This repo is for the purposes of my own version control/backup/archival.
+Please do not plagiarize or copy my work. This repository is for the purposes of my own version control/backup/archival.
 Contact me if you wish to use this in anyway - tim.weatherford@gmail.com
