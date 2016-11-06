@@ -1,5 +1,5 @@
 #COP1000 Homework
-##For Daytona State College - Fall 2016
+##For Daytona State College - Fall B 2016
 ###Principles of Computer Program_V5_FA16_LEC
 ###Instructor:Bettye Parham
 ###Student:Tim Weatherford

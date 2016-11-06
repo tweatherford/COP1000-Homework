@@ -59,7 +59,7 @@ def displayReport(items,subtotal,tax,total):
     print("Purchase Receipt")
     print("=-"*30)
     for item in items:
-        count = count + 1 
+        count += 1
         print("Price of Item#"+ str(count) + ":$" + str(round(item,2)))
     print("Qty of Items:" + str(count))
     print("Subtotal:$" + str(round(subtotal,2)))

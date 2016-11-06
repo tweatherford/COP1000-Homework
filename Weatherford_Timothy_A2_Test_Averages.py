@@ -45,7 +45,7 @@ def displayReport(student,qty,tests,testSum,testAvg):
     print("=-"*30)
     print("Student:" +student)
     for test in tests:
-        count = count + 1 
+        count += 1
         print("Score for Test#"+ str(count) + ":" + str(test))
     print("Qty of Tests Scored:" + str(count))
     print("Average Test Score:" + str(testAvg))
