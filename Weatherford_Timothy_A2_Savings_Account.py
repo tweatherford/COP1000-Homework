@@ -6,7 +6,6 @@
 
 import time
 
-atmInitialied = 0
 title = "WELCOME TO THE FAKEBANK,INC ATM"
 
 ##Presentation Functions##
@@ -89,7 +88,7 @@ def depositMoney(amount,balance,name):
     printHeader("DEPOSIT MONEY -" + name)
     balance += amount
     print("You sucessfully deposited $" + str(amount) +" into your account.")
-    print("Your new balance is $" + str(balance) + ".")
+    print("Your new balance is:$" + str(balance) + ".")
     input("Press enter to continue...")
     mainMenu(balance,name)
     return balance
