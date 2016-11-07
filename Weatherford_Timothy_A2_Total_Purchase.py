@@ -7,8 +7,9 @@
 ##Presentation Methods
 
 #Prints the introduction - just for presentation.
-def displayIntro():
-    print("Purchasing System")
+def displayIntro(title):
+    print("=-"*30)
+    print(title)
     print("=-"*30)
 
 #Empty Lines - for presentation. Seperates user input from the output report.
@@ -56,8 +57,7 @@ def getTotal(subtotal,tax):
 #This method accepts our data as input and prepares the final output.
 def displayReport(items,subtotal,tax,total):
     count = 0
-    print("Purchase Receipt")
-    print("=-"*30)
+    displayIntro("Receipt for Purchase")
     for item in items:
         count += 1
         print("Price of Item#"+ str(count) + ":$" + str(round(item,2)))
@@ -73,7 +73,8 @@ def displayReport(items,subtotal,tax,total):
 ##Program Main Loop##
 
 #Presentation
-displayIntro()
+title = "Purchasing System"
+displayIntro(title)
 #Input - Get Items and qty
 qty = getQty()
 items = getItems()

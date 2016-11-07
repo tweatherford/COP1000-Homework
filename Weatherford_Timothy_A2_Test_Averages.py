@@ -6,8 +6,10 @@
 
 
 #Prints the introduction - just for presentation.
-print("Student Grade Report System")
-print("=-"*30)
+def displayIntro(title):
+    print("=-"*30)
+    print(title)
+    print("=-"*30)
 
 ##Begin Helper Methods##
 
@@ -41,8 +43,8 @@ def getSum(tests):
 #This method accepts our data as input and prepares the final output.
 def displayReport(student,qty,tests,testSum,testAvg):
     count = 0
-    print("Grade Report for " + student)
-    print("=-"*30)
+    title = "Grade Report for " + student
+    displayIntro(title)
     print("Student:" +student)
     for test in tests:
         count += 1
@@ -55,6 +57,8 @@ def displayReport(student,qty,tests,testSum,testAvg):
 
 ##End Helper Methods##
 
+#Presentation
+displayIntro("Student Grade Reporting System")
 #Program Main Loop - getters and setters.          
 student = getStudent()
 qty = getQty()
