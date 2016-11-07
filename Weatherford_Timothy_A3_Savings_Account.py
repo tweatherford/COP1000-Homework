@@ -19,6 +19,10 @@ def printHeader(text):
 def printSpacer():
     print("-"*60)
 
+def printError(text):
+    printSpacer()
+    print("Error - " + text)
+    input("Press enter to continue...")
 
 ##Startup Functions##
 #Gets the initial balance of the ATM
@@ -77,12 +81,10 @@ def withdrawMoney(amount,balance,name):
         input("Press enter to continue...")
         mainMenu(balance,name)
     elif balance < amount:
-        print("Error - Your balance is not sufficient.")
-        input("Press enter to continue...")
+        printError("Your balance is not sufficient.")
         mainMenu(balance,name)
     else:
-        Print("Error - Invalid Selection")
-        input("Press enter to continue")
+        PrintError("Invalid Selection")
         mainMenu(balance,name)
     return balance
         
@@ -122,15 +124,18 @@ def takeAction(selection,balance,name):
             amount = int(input("How much would you like to withdraw?:$"))
             balance = withdrawMoney(amount,balance,name)
         else:
-            printSpacer()
-            print("Error - You do not have any money available for withdraw")
-            input("Press enter to continue...")
+            printError("You do not have any money available for withdraw")
             mainMenu(balance,name)
     elif selection == 3:
         printSpacer()
         print("Your current balance is:$ " + str(balance))
         amount = int(input("How much would you like to deposit?:$"))
-        balance = depositMoney(amount,balance,name)
+        if amount > 0:
+            balance = depositMoney(amount,balance,name)
+            return balance
+        else:
+            printError("The amount must be greater than $0")
+            mainMenu(balance,name)
     else:
         #Get us a new user if logout or invalid choice is selected.
         getUser(balance)
