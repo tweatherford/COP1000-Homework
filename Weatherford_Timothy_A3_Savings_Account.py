@@ -21,7 +21,6 @@ def printSpacer():
 
 
 ##Startup Functions##
-
 #Gets the initial balance of the ATM
 def getInitialBalance():
     balance = int(input("Please enter the users initial balance:$"))
@@ -56,6 +55,7 @@ def getCustomer():
     name = str(input("Please enter your name to continue:"))
     return name
 
+##Main Functions##
 #Prints the main menu functions
 def mainMenu(balance,name):
     printHeader("MAIN MENU - Welcome " + name + "!")
