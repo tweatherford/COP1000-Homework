@@ -27,8 +27,8 @@ def printError(text):
 ##Startup Functions##
 #Gets the initial balance of the ATM
 def getInitialBalance():
-    balance = int(input("Please enter the users initial balance:$"))
-    print("Is $" + str(balance) + " correct for the initial balance?")
+    balance = float(input("Please enter the users initial balance:$"))
+    print("Is $" + str(format(balance, "9,.2f")) + " correct for the initial balance?")
     decision = str(input("Please enter 'yes' or 'no':"))
     if decision == "yes":
         bootOS()
@@ -76,8 +76,8 @@ def withdrawMoney(amount,balance,name):
     printHeader("WITHDRAW MONEY - " + name)
     if balance >= amount:
         balance -= amount
-        print("You sucessfully withdrew $" + str(amount) +". Please take your money below.")
-        print("Your new balance is $" + str(balance) + ".")
+        print("You sucessfully withdrew $" + str(format(amount, "9,.2f")) +". Please take your money below.")
+        print("Your new balance is $" + str(format(balance, "9,.2f")) + ".")
         input("Press enter to continue...")
         mainMenu(balance,name)
     elif balance < amount:
@@ -93,8 +93,8 @@ def withdrawMoney(amount,balance,name):
 def depositMoney(amount,balance,name):
     printHeader("DEPOSIT MONEY -" + name)
     balance += amount
-    print("You sucessfully deposited $" + str(amount) +" into your account.")
-    print("Your new balance is:$" + str(balance) + ".")
+    print("You sucessfully deposited $" + str(format(amount, "9,.2f")) +" into your account.")
+    print("Your new balance is:$" + str(format(balance, "9,.2f")) + ".")
     input("Press enter to continue...")
     mainMenu(balance,name)
     return balance
@@ -102,7 +102,7 @@ def depositMoney(amount,balance,name):
 #Displays User's Balance
 def checkBalance(balance,name):
     printHeader("DISPLAY BALANCE - " + name)
-    print("Your balance is:$" + str(balance))
+    print("Your balance is:$" + str(format(balance, "9,.2f")))
     input("Press enter to continue...")
     mainMenu(balance,name)
 
@@ -120,18 +120,18 @@ def takeAction(selection,balance,name):
     elif selection == 2:
         if balance > 0:
             printSpacer()
-            print("Your current balance is:$ " + str(balance))
-            amount = int(input("How much would you like to withdraw?:$"))
-            balance = withdrawMoney(amount,balance,name)
+            print("Your current balance is:$ " + str(format(balance, "9,.2f")))
+            amount = round(float(input("How much would you like to withdraw?:$")), 2)
+            balance = round(withdrawMoney(amount,balance,name), 2)
         else:
             printError("You do not have any money available for withdraw")
             mainMenu(balance,name)
     elif selection == 3:
         printSpacer()
-        print("Your current balance is:$ " + str(balance))
-        amount = int(input("How much would you like to deposit?:$"))
+        print("Your current balance is:$ " + str(format(balance, "9,.2f")))
+        amount = round(float(input("How much would you like to deposit?:$")), 2)
         if amount > 0:
-            balance = depositMoney(amount,balance,name)
+            balance = round(depositMoney(amount,balance,name),2)
             return balance
         else:
             printError("The amount must be greater than $0")
@@ -143,7 +143,7 @@ def takeAction(selection,balance,name):
 ##Main Program Loop##
 
 #Startsup ATM and gets an initial balance
-balance = initializeATM()
+balance = round(initializeATM(), 2)
 #Gets our first customer
 name = getUser(balance)
 #Prints main menu for the customer
