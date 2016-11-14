@@ -78,7 +78,9 @@ def withdrawMoney(amount,balance,name):
         balance -= amount
         print("You sucessfully withdrew $" + str(format(amount, "9,.2f")) +". Please take your money below.")
         print("Your new balance is $" + str(format(balance, "9,.2f")) + ".")
-        input("Press enter to continue...")
+        if balance < 150:
+            print("Warning: Your balance is below $150")
+        input("Press enter to continue...") 
         mainMenu(balance,name)
     elif balance < amount:
         printError("Your balance is not sufficient.")
@@ -103,6 +105,8 @@ def depositMoney(amount,balance,name):
 def checkBalance(balance,name):
     printHeader("DISPLAY BALANCE - " + name)
     print("Your balance is:$" + str(format(balance, "9,.2f")))
+    if balance < 150:
+        print("Warning: Your balance is below $150")
     input("Press enter to continue...")
     mainMenu(balance,name)
 
