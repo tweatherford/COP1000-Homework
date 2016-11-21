@@ -1,7 +1,7 @@
 ##-----------------------------------------------------------
 ##Programmed by: Tim Weatherford
-##Assignment 4 - Displays the average of x number of tests along with a letter grade.
-##Created 11/11/16 - v1.0
+##Assignment 6 - Displays the average of x number of tests along with a letter grade.
+##Created 11/14/16 - v1.0
 ##-----------------------------------------------------------
 
 letterGrade = "Unknown Grade"
