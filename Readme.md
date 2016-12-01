@@ -2,7 +2,8 @@
 ##For Daytona State College - Fall B 2016
 ###Principles of Computer Program_V5_FA16_LEC
 ###Instructor:Bettye Parham
-###Student:Tim Weatherford
+###Student:Tim weatherford
+###College Email:timothy_weatherford@daytonastate.edu
 Git repo for all my assignments for the online Intro to Programming class.
 Uses Python 3.5.2 for all files ending in .py 
 All files ending in .rap use the [Raptor Flowcharting Tool](http://raptor.martincarlisle.com/)
