@@ -1,0 +1,4 @@
+The highest GPA is: 2.50
+The lowest GPA is: 4.00
+Average GPA is: 3.60
+Number of GPA's between 2.5 and 3.5: 9.00

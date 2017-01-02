@@ -1,0 +1,4 @@
+Search Results:
+==============================
+Your target GPA of 3.00 occured 1.00 number of times in the list of GPAs.
+==============================

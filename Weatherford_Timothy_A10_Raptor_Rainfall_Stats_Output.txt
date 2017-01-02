@@ -1,0 +1,4 @@
+The highest recorded rain is: 1
+The lowest recorded rain is: 36
+Average rainfall is: 12.5000
+Number of rainfall points between 1 and 10: 30

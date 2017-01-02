@@ -1,0 +1,4 @@
+Search Results:
+==============================
+Your target rainfall of 4 occured 5 number of times in the list of rainfall data.
+==============================
