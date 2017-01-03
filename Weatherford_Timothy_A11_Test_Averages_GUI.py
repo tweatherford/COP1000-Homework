@@ -123,16 +123,6 @@ class testAvg:
         self.avg.set(self.average)
 
     def calc_grade(self):
-##        #Get the test scores as variables
-##        self.test1= float(self.test1_entry.get())
-##        self.test2= float(self.test2_entry.get())
-##        self.test3= float(self.test3_entry.get())
-##        self.test4= float(self.test4_entry.get())
-##        self.test5= float(self.test5_entry.get())
-##        self.test6= float(self.test6_entry.get())
-##        self.test7= float(self.test7_entry.get())
-##
-##        self.average = (self.test1 + self.test2 + self.test3 + self.test4 + self.test5 + self.test6 + self.test7)/
 
         if self.average < 60:
             self.grade.set("F")
