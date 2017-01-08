@@ -7,6 +7,7 @@ Pong Game - Simple pong game with TKinter and canvas to draw game assets.
 #Imports
 import tkinter
 from tkinter import *
+from tkinter import messagebox
 
 
 #Defines our pong game class - input is a TKinter frame object.
