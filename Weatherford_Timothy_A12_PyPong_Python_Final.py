@@ -145,7 +145,6 @@ class Pong(Frame):
         if self.canvas.coords(self.ball)[0] <= 0:
             self.ballDX = -self.ballDX
             self.player2Points+=1
-            self.canvas.delete(self.textLabel)
             self.updateScores()
             self.centerBall()
         if self.canvas.coords(self.ball)[2] >= self.winWIDTH:
