@@ -2,9 +2,9 @@
 COP1000 PyPong Final Scores
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 ------------------------------------------------------------
-Player 1's Score: 2 |  Player 2's Score: 1
+Player 1's Score: 0 |  Player 2's Score: 0
 ------------------------------------------------------------
-Winner is Player 1!!! Congratulations Player 1!!!
+The game was a draw! Good game to both players!
 ------------------------------------------------------------
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 Programmed by: Timothy Weatherford 

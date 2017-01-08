@@ -98,7 +98,7 @@ class Pong(Frame):
         self.deleteScores()
         self.textLabel = self.canvas.create_text(self.winWIDTH/2,40, text="Player1 - " + str(self.player1Points)+" | Player 2 - " + str(self.player2Points))
 
-    #Used to center a ball after a server
+    #Used to center a ball after a point is scored
     def centerBall(self):
         self.canvas.coords(self.ball,self.winWIDTH/2,self.winHEIGHT/2,self.winWIDTH/2+10,self.winHEIGHT/2+10)
         
@@ -114,7 +114,7 @@ class Pong(Frame):
         self.ball = self.canvas.create_oval(0+self.ballX, 0+self.ballY, 10+self.ballX, 10+self.ballY, outline="black", 
             fill="blue", width=1)
         self.paddle1 = self.canvas.create_rectangle(0+self.paddle1X, 0+self.paddle1Y, 10+self.paddle1X, 50+self.paddle1Y, outline="black", fill="yellow")
-        self.paddle2 = self.canvas.create_rectangle(0+self.paddle2X, 0+self.paddle2Y, 10+self.paddle2X, 50++self.paddle2Y, outline="black", fill="yellow")
+        self.paddle2 = self.canvas.create_rectangle(0+self.paddle2X, 0+self.paddle2Y, 10+self.paddle2X, 50+self.paddle2Y, outline="black", fill="yellow")
         self.createLabels()
         self.parent.bind("<Key>", self.key)
         self.parent.bind("<Button-1>", self.mouseHandler)
