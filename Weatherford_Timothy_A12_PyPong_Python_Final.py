@@ -83,6 +83,7 @@ class Pong(Frame):
         coords1[1] = event.y
         coords1[3] = event.y+height1
         self.canvas.coords(self.paddle1,coords1[0],coords1[1],coords1[2],coords1[3])
+
     #Creates text labels
     def createLabels(self):
         self.pongLabel = self.canvas.create_text(self.winWIDTH/2,10,text="COP1000 PyPong - by Tim Weatherford")
